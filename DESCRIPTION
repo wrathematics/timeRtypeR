@@ -1,0 +1,12 @@
+Package: timebetween
+Type: Package
+Version: 1.0
+License: BSD 2-clause License + file LICENSE
+Title: Time Between Key Presses
+Description: Ever wanted to know how many characters per second you write
+      R?  
+Depends: R (>= 2.14.0)
+NeedsCompilation: Yes
+ByteCompile: Yes
+Author: Drew Schmidt
+Maintainer: Drew Schmidt <wrathematics@gmail.com>

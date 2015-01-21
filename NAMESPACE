@@ -1,0 +1,3 @@
+useDynLib(timebetween, R_getchar)
+
+export(timebetween, showspeed, restart)
