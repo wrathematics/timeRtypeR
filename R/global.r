@@ -45,7 +45,12 @@ tb_update_globals <- function()
 
 showspeed <- function()
 {
-  tbenv$avg
+  avg <- tbenv$avg
+  
+  cat(paste0("Average # keys per second:  ", avg, "\n"))
+  cat(paste0("Average time between keypresses:  ", 1 / avg, "\n"))
+  
+  invisible()
 }
 
 restart <- function()
