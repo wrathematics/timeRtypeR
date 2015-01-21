@@ -58,10 +58,10 @@ showspeed <- function()
   avgchars <- tbenv$avgchars
   avgwords <- tbenv$avgwords
   
-  cat(paste0("Average # keys per second:  ", avgchars, "\n"))
-  cat(paste0("Average time between keypresses:  ", 1 / avgchars, "\n"))
+  cat(paste0("Average # keys per second:\t\t", round(avgchars, 3), "\n"))
+  cat(paste0("Average time between keypresses:\t", round(1 / avgchars, 3), "\n"))
   
-  cat(paste0("Average # words per minute:  ", avgwords, "\n\n"))
+  cat(paste0("Average # words per minute:\t\t", round(avgwords, 3), "\n\n"))
   
   invisible()
 }
