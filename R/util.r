@@ -1,3 +1,13 @@
+is.error <- function(obj)
+{
+  if (inherits(obj, "try-error") || inherits(obj, "error"))
+    return(TRUE)
+  else
+    return(FALSE)
+}
+
+
+
 clear <- function()
 {
   platform <- .Platform$OS.type

@@ -69,16 +69,6 @@ tb_sanitize <- function(inputs)
 
 
 
-is.error <- function(obj)
-{
-  if (inherits(obj, "try-error") || inherits(obj, "error"))
-    return(TRUE)
-  else
-    return(FALSE)
-}
-
-
-
 tb_repl_printer <- function(ret)
 {
   if (!is.null(tbenv$visible))
@@ -215,4 +205,4 @@ tb_repl <- function(env=sys.parent())
 
 
 
-timebetween <- tb_repl
+timertyper <- timeRtypeR <- tb_repl

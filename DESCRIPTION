@@ -1,8 +1,8 @@
-Package: timebetween
+Package: timeRtypeR
 Type: Package
 Version: 1.0
 License: BSD 2-clause License + file LICENSE
-Title: Time Between Key Presses
+Title: A Tool for Measuring Keys Per Second and Words Per Minute
 Description: Ever wanted to know how many characters per second you write
       R?  
 Depends: R (>= 2.14.0)
