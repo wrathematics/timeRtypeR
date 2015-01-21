@@ -43,7 +43,7 @@ tb_readline <- function(input, continuation)
     cat(char)
     buffer <- c(buffer, char)
     
-    tb_update_globals()
+    tb_update_globals(char=char)
   }
   
 #  ret <- c(input, readline(prompt=prompt))
@@ -61,7 +61,7 @@ tb_sanitize <- function(inputs)
   {
     input <- inputs[i]
     if (grepl(x=input, pattern="(^q\\(|^quit\\()", perl=TRUE)) 
-      inputs[i] <- "timebetween:::tb_exit()"
+      inputs[i] <- "timeRtypeR:::tb_exit()"
   }
   
   return(inputs)
